@@ -1,0 +1,213 @@
+@prefix : <http://purl.obolibrary.org/obo/organoid/> .
+@prefix ORGANOID: <http://purl.obolibrary.org/obo/ORGANOID_> .
+@prefix i: <http://purl.obolibrary.org/obo/organoid/instance/> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix GO: <http://purl.obolibrary.org/obo/GO_> .
+@prefix UBERON: <http://purl.obolibrary.org/obo/UBERON_> .
+@prefix HP: <http://purl.obolibrary.org/obo/HP_> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix models: <http://purl.obolibrary.org/obo/RO_0003301> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+##
+
+    models: a owl:ObjectProperty .
+    
+
+i:sato2009single IAO:0000136 i:sato2009single-model .
+i:sato2009single dc:title "Single Lgr5 stem cells build crypt villus structures in vitro without a mesenchymal niche" .
+i:sato2009single-model a ORGANOID:0000001 .
+    i:sato2009single-model models: UBERON:0001555 .
+    
+i:sato2011paneth IAO:0000136 i:sato2011paneth-model .
+i:sato2011paneth dc:title "Paneth cells constitute the niche for Lgr5 stem cells in intestinal crypts" .
+i:sato2011paneth-model a ORGANOID:0000001 .
+    i:sato2009paneth-model models: UBERON:0001555 .
+
+i:dekkers2013functional IAO:0000136 i:dekkers2013functional-model .
+i:dekkers2013functional dc:title "A functional CFTR assay using primary cystic fibrosis intestinal organoids" .
+i:dekkers2013functional-model a ORGANOID:0000001 .
+    i:dekkers2013functional-model models: UBERON:0001555 .
+
+i:sato2011long IAO:0000136 i:sato2011long-model .
+i:sato2011long dc:title "Long-term expansion of epithelial organoids from human colon, adenoma, adenocarcinoma, and Barrett's epithelium" .
+i:sato2011long-model a ORGANOID:0000001 .
+    i:sato2011long-model models: UBERON:0001555 .
+
+i:yui2012functional IAO:0000136 i:yui2012functional-model .
+i:yui2012functional dc:title "Functional engraftment of colon epithelium expanded in vitro from a single adult Lgr5+ stem cell" .
+i:yui2012functional-model a ORGANOID:0000001 .
+    i:yui2012functional-model models: UBERON:0001555 .
+
+i:spence2011directed IAO:0000136 i:spence2011directed-model .
+i:spence2011directed dc:title "Directed differentiation of human pluripotent stem cells into intestinal tissue in vitro" .
+i:spence2011directed-model a ORGANOID:0000001 .
+    i:spence2011directed-model models: UBERON:0001555 .
+
+i:wang2006mutant IAO:0000136 i:wang2006mutant-model .
+i:wang2006mutant dc:title "Mutant neurogenin-3 in congenital malabsorptive diarrhea" .
+i:wang2006mutant-model a ORGANOID:0000001 .
+    i:wang2006mutant-model models: UBERON:0001555 .
+
+i:watson2014vivo IAO:0000136 i:watson2014vivo-model .
+i:watson2014vivo dc:title "An in vivo model of human small intestine using pluripotent stem cells" .
+i:watson2014vivo-model a ORGANOID:0000001 .
+    i:watson2014vivo-model models: UBERON:0001555 .
+
+i:mccracken2014modelling IAO:0000136 i:mccracken2014modelling-model .
+i:mccracken2014modelling dc:title "Modelling human development and disease in pluripotent stem-cell-derived gastric organoids" .
+i:mccracken2014modelling-model a ORGANOID:0000001 .
+    i:mccracken2014modelling-model models: UBERON:0001555 .
+
+i:weiss1960reconstitution IAO:0000136 i:weiss1960reconstitution-model .
+i:weiss1960reconstitution dc:title "Reconstitution of complete organs from single-cell suspensions of chick embryos in advanced stages of differentiation" .
+i:weiss1960reconstitution-model a ORGANOID:0000001 .
+    i:weiss1960reconstitution-model models: UBERON:0002107 .
+    
+i:huch2013vitro IAO:0000136 i:huch2013vitro-model .
+i:huch2013vitro dc:title "In vitro expansion of single Lgr5+ liver stem cells induced by Wnt-driven regeneration" .
+i:huch2013vitro-model a ORGANOID:0000001 .
+    i:huch2013vitro-model models: UBERON:0002107 .
+
+i:huch2015long IAO:0000136 i:huch2015long-model .
+i:huch2015long dc:title "Long-term culture of genome-stable bipotent stem cells from adult human liver" .
+i:huch2015long-model a ORGANOID:0000001 .
+    i:huch2015long-model models: UBERON:0002107 .
+
+i:takebe2013vascularized IAO:0000136 i:takebe2013vascularized-model .
+i:takebe2013vascularized dc:title "Vascularized and functional human liver from an iPSC-derived organ bud transplant" .
+i:takebe2013vascularized-model a ORGANOID:0000001 .
+    i:takebe2013vascularized-model models: UBERON:0002107 .
+
+i:unbekandt2010dissociation IAO:0000136 i:unbekandt2010dissociation-model .
+i:unbekandt2010dissociation dc:title "Dissociation of embryonic kidneys followed by reaggregation allows the formation of renal tissues" .
+i:unbekandt2010dissociation-model a ORGANOID:0000001 .
+    i:unbekandt2010dissociation-model models: UBERON:0002113 .
+    
+
+i:xinaris2012vivo IAO:0000136 i:xinaris2012vivo-model .
+i:xinaris2012vivo dc:title "In vivo maturation of functional renal organoids formed from embryonic cell suspensions" .
+i:xinaris2012vivo-model a ORGANOID:0000001 .
+    i:xinaris2012vivo-model models: UBERON:0002113 .
+
+
+i:xia2013directed IAO:0000136 i:xia2013directed-model .
+i:xia2013directed dc:title "Directed differentiation of human pluripotent cells to ureteric bud kidney progenitor-like cells" .
+i:xia2013directed-model a ORGANOID:0000001 .
+i:xia2013directed-model models: UBERON:0002113 .
+
+i:takasato2014directing IAO:0000136 i:takasato2014directing-model .
+i:takasato2014directing dc:title "Directing human embryonic stem cell differentiation towards a renal lineage generates a self-organizing kidney" .
+i:takasato2014directing-model a ORGANOID:0000001 .
+    i:takasato2014directing-model models: UBERON:0002113 .
+
+
+i:ishii1966reconstruction IAO:0000136 i:ishii1966reconstruction-model .
+i:ishii1966reconstruction dc:title "Reconstruction of dissociated chick brain cells in rotation-mediated culture" .
+i:ishii1966reconstruction-model a ORGANOID:0000001 .
+    i:ishii1966reconstruction-model models: UBERON:0000955 .
+
+i:eiraku2008self IAO:0000136 i:eiraku2008self-model .
+i:eiraku2008self dc:title "Self-organized formation of polarized cortical tissues from ESCs and its active manipulation by extrinsic signals" .
+i:eiraku2008self-model a ORGANOID:0000001 .
+    i:eiraku2008self-model models: UBERON:0000955 .
+
+i:kadoshima2013self IAO:0000136 i:kadoshima2013self-model .
+i:kadoshima2013self dc:title "Self-organization of axial polarity, inside-out layer pattern, and species-specific progenitor dynamics in human ES cell--derived neocortex" .
+i:kadoshima2013self-model a ORGANOID:0000001 .
+    i:kadoshima2013self-model models: UBERON:0000955 .
+
+i:danjo2011subregional IAO:0000136 i:danjo2011subregional-model .
+i:danjo2011subregional dc:title "Subregional specification of embryonic stem cell-derived ventral telencephalic tissues by timed and combinatory treatment with extrinsic signals" .
+i:danjo2011subregional-model a ORGANOID:0000001 .
+    i:danjo2011subregional-model models: UBERON:0000204 .
+
+i:suga2011self IAO:0000136 i:suga2011self-model .
+i:suga2011self dc:title "Self-formation of functional adenohypophysis in three-dimensional culture" .
+i:suga2011self-model a ORGANOID:0000001 .
+    i:suga2011self-model models: UBERON:0002196 .
+    
+
+i:lancaster2013cerebral IAO:0000136 i:lancaster2013cerebral-model .
+i:lancaster2013cerebral dc:title "Cerebral organoids model human brain development and microcephaly" .
+i:lancaster2013cerebral-model a ORGANOID:0000001 .
+    i:lancaster2013cerebral-model models: UBERON:0000955 .
+    i:lancaster2013cerebral-model models: HP:0000252 .
+    
+
+
+i:stefanelli1961retinal IAO:0000136 i:stefanelli1961retinal-model .
+i:stefanelli1961retinal dc:title "Retinal reconstitution in vitro after disaggregation of embryonic chicken eyes (Translated from Italian)" .
+i:stefanelli1961retinal-model a ORGANOID:0000001 .
+    i:stefanelli1961retinal-model models: UBERON:0000966 .
+    
+i:rothermel1997pigmented IAO:0000136 i:rothermel1997pigmented-model .
+i:rothermel1997pigmented dc:title "Pigmented epithelium induces complete retinal reconstitution from dispersed embryonic chick retinae in reaggregation culture" .
+i:rothermel1997pigmented-model a ORGANOID:0000001 .
+    i:rothermel1997pigmented-model models: UBERON:0000966 .
+
+i:eiraku2011self IAO:0000136 i:eiraku2011self-model .
+i:eiraku2011self dc:title "Self-organizing optic-cup morphogenesis in three-dimensional culture" .
+i:eiraku2011self-model a ORGANOID:0000001 .
+    i:eiraku2011self-model models: UBERON:0000966 .
+    i:eiraku2011self-model models: GO:0002072 .
+
+i:nakano2012self IAO:0000136 i:nakano2012self-model .
+i:nakano2012self dc:title "Self-formation of optic cups and storable stratified neural retina from human ESCs" .
+i:nakano2012self-model a ORGANOID:0000001 .
+    i:nakano2012self-model models: UBERON:0003902 .
+    i:nakano2012self-model models: GO:0002072 .
+
+
+i:assawachananont2014transplantation IAO:0000136 i:assawachananont2014transplantation-model .
+i:assawachananont2014transplantation dc:title "Transplantation of embryonic and induced pluripotent stem cell-derived 3D retinal sheets into retinal degenerative mice" .
+i:assawachananont2014transplantation-model a ORGANOID:0000001 .
+    i:assawachananont2014transplantation-model models: UBERON:0001789 .
+
+i:zhu2013three IAO:0000136 i:zhu2013three-model .
+i:zhu2013three dc:title "Three-dimensional neuroepithelial culture from human embryonic stem cells and its use for quantitative conversion to retinal pigment epithelium" .
+i:zhu2013three-model a ORGANOID:0000001 .
+    i:zhu2013three-model models: UBERON:0001782 .
+    i:zhu2013three-model models: UBERON:0003902 .
+
+i:gao2014organoid IAO:0000136 i:gao2014organoid-model .
+i:gao2014organoid dc:title "Organoid cultures derived from patients with advanced prostate cancer" .
+i:gao2014organoid-model a ORGANOID:0000001 .
+    i:gao2014organoid-model models: HP:0012125 .
+
+i:antonica2012generation IAO:0000136 i:antonica2012generation-model .
+i:antonica2012generation dc:title "Generation of functional thyroid from embryonic stem cells" .
+i:antonica2012generation-model a ORGANOID:0000001 .
+    i:antonica2012generation-model models: UBERON:0002046 .
+
+i:lee2014lung IAO:0000136 i:lee2014lung-model .
+i:lee2014lung dc:title "Lung stem cell differentiation in mice directed by endothelial cells via a BMP4-NFATc1-thrombospondin-1 axis" .
+i:lee2014lung-model a ORGANOID:0000001 .
+    i:lee2014lung-model a UBERON:0002048 .
+
+i:greggio2013artificial IAO:0000136 i:greggio2013artificial-model .
+i:greggio2013artificial dc:title "Artificial three-dimensional niches deconstruct pancreas development in vitro" .
+i:greggio2013artificial-model a ORGANOID:0000001 .
+    i:greggio2013artificial-model models: UBERON:0001264 .
+    
+
+i:lee2008engineered IAO:0000136 i:lee2008engineered-model .
+i:lee2008engineered dc:title "Engineered cardiac organoid chambers: toward a functional biological model ventricle" .
+i:lee2008engineered-model a ORGANOID:0000001 .
+    i:lee2008engineered-model models: UBERON:0002082 .
+    
+i:mondrinos2014engineering IAO:0000136 i:mondrinos2014engineering-model .
+i:mondrinos2014engineering dc:title "Engineering de novo assembly of fetal pulmonary organoids" .
+i:mondrinos2014engineering-model a ORGANOID:0000001 .
+    i:mondrinos2014engineering-model models: UBERON:0002048 .
+
+i:mondrinos2014engineering IAO:0000136 i:mondrinos2014engineering-model .
+i:mondrinos2014engineering dc:title "Engineering de novo assembly of fetal pulmonary organoids" .
+i:mondrinos2014engineering-model a ORGANOID:0000001 .
+    i:mondrinos2014engineering-model models: UBERON:0002048 .
+
+i:mroue2013three IAO:0000136 i:mroue2013three-model .
+i:mroue2013three dc:title "Three-dimensional cultures of mouse mammary epithelial cells" .
+i:mroue2013three-model a ORGANOID:0000001 .
+    i:mroue2013three-model models: UBERON:0001911 .
+    
