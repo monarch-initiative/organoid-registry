@@ -12,6 +12,7 @@
 ##
 
     models: a owl:ObjectProperty .
+    IAO:0000136 a owl:ObjectProperty .
     
 
 i:sato2009single IAO:0000136 i:sato2009single-model .
