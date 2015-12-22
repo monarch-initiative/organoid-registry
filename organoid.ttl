@@ -1,0 +1,1359 @@
+@prefix : <http://purl.obolibrary.org/obo/organoid.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.obolibrary.org/obo/organoid.owl> .
+
+<http://purl.obolibrary.org/obo/organoid.owl> rdf:type owl:Ontology ;
+                                              
+                                              rdfs:comment "Includes Ontology(OntologyID(Anonymous-5)) [Axioms: 185 Logical Axioms: 147]"^^xsd:string ,
+                                                           "Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo//envo/modules/organoid.owl>))) [Axioms: 42 Logical Axioms: 6]"^^xsd:string ;
+                                              
+                                              owl:imports <http://purl.obolibrary.org/obo/organoid/imports/uberon_import.owl> .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://geneontology.org/foo/applies-pattern
+
+<http://geneontology.org/foo/applies-pattern> rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/patterns/organoid/models
+
+<http://purl.obolibrary.org/obo/organoid/patterns/organoid/models> rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.org/dc/terms/title
+
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+
+<http://www.geneontology.org/formats/oboInOwl#hasDbXref> rdf:type owl:AnnotationProperty ;
+                                                         
+                                                         rdfs:label "database_cross_reference"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+
+<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+
+<http://www.geneontology.org/formats/oboInOwl#id> rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#shorthand
+
+<http://www.geneontology.org/formats/oboInOwl#shorthand> rdf:type owl:AnnotationProperty ;
+                                                         
+                                                         rdfs:label "shorthand"^^xsd:string .
+
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000050
+
+<http://purl.obolibrary.org/obo/BFO_0000050> rdf:type owl:ObjectProperty ;
+                                             
+                                             rdfs:label "part of"^^xsd:string ;
+                                             
+                                             <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "BFO:0000050"^^xsd:string ;
+                                             
+                                             <http://www.geneontology.org/formats/oboInOwl#id> "part_of"^^xsd:string ;
+                                             
+                                             <http://www.geneontology.org/formats/oboInOwl#shorthand> "part_of"^^xsd:string .
+
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000136
+
+<http://purl.obolibrary.org/obo/IAO_0000136> rdf:type owl:ObjectProperty .
+
+
+
+###  http://purl.obolibrary.org/obo/RO_0003301
+
+<http://purl.obolibrary.org/obo/RO_0003301> rdf:type owl:ObjectProperty ;
+                                            
+                                            rdfs:label "is model of"^^xsd:string ;
+                                            
+                                            <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "RO:0003301"^^xsd:string ;
+                                            
+                                            <http://www.geneontology.org/formats/oboInOwl#id> "is_model_of"^^xsd:string ;
+                                            
+                                            <http://www.geneontology.org/formats/oboInOwl#shorthand> "is_model_of"^^xsd:string ;
+                                            
+                                            owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/RO_0003301>
+                                                                     <http://purl.obolibrary.org/obo/BFO_0000050>
+                                                                   ) .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://purl.obolibrary.org/obo/GO_0002072
+
+<http://purl.obolibrary.org/obo/GO_0002072> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/HP_0000252
+
+<http://purl.obolibrary.org/obo/HP_0000252> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/HP_0012125
+
+<http://purl.obolibrary.org/obo/HP_0012125> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/ORGANOID_0000001
+
+<http://purl.obolibrary.org/obo/ORGANOID_0000001> rdf:type owl:Class ;
+                                                  
+                                                  rdfs:label "organoid"^^xsd:string ;
+                                                  
+                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/UBERON_0000465> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0003301> ;
+                                                                    owl:someValuesFrom <http://purl.obolibrary.org/obo/UBERON_0000468>
+                                                                  ] ;
+                                                  
+                                                  <http://www.geneontology.org/formats/oboInOwl#id> "ORGANOID:0000001"^^xsd:string .
+
+
+
+###  http://purl.obolibrary.org/obo/ORGANOID_0000002
+
+<http://purl.obolibrary.org/obo/ORGANOID_0000002> rdf:type owl:Class ;
+                                                  
+                                                  rdfs:label "gut organoid" ;
+                                                  
+                                                  owl:equivalentClass [ rdf:type owl:Class ;
+                                                                        owl:intersectionOf ( <http://purl.obolibrary.org/obo/ORGANOID_0000001>
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0003301> ;
+                                                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/UBERON_0001555>
+                                                                                             ]
+                                                                                           )
+                                                                      ] ;
+                                                  
+                                                  <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "model of digestive tract" ;
+                                                  
+                                                  <http://purl.obolibrary.org/obo/IAO_0000115> "Any organoid that models a digestive tract." .
+
+
+
+###  http://purl.obolibrary.org/obo/ORGANOID_0000003
+
+<http://purl.obolibrary.org/obo/ORGANOID_0000003> rdf:type owl:Class ;
+                                                  
+                                                  rdfs:label "kidney organoid" ;
+                                                  
+                                                  owl:equivalentClass [ rdf:type owl:Class ;
+                                                                        owl:intersectionOf ( <http://purl.obolibrary.org/obo/ORGANOID_0000001>
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0003301> ;
+                                                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/UBERON_0002113>
+                                                                                             ]
+                                                                                           )
+                                                                      ] ;
+                                                  
+                                                  <http://purl.obolibrary.org/obo/IAO_0000115> "Any organoid that models a kidney." ;
+                                                  
+                                                  <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "model of kidney" .
+
+
+
+###  http://purl.obolibrary.org/obo/ORGANOID_0000004
+
+<http://purl.obolibrary.org/obo/ORGANOID_0000004> rdf:type owl:Class ;
+                                                  
+                                                  rdfs:label "nervous system organoid" ;
+                                                  
+                                                  owl:equivalentClass [ rdf:type owl:Class ;
+                                                                        owl:intersectionOf ( <http://purl.obolibrary.org/obo/ORGANOID_0000001>
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0003301> ;
+                                                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/UBERON_0001016>
+                                                                                             ]
+                                                                                           )
+                                                                      ] ;
+                                                  
+                                                  <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "model of nervous system" ;
+                                                  
+                                                  <http://purl.obolibrary.org/obo/IAO_0000115> "Any organoid that models a nervous system." .
+
+
+
+###  http://purl.obolibrary.org/obo/ORGANOID_0000005
+
+<http://purl.obolibrary.org/obo/ORGANOID_0000005> rdf:type owl:Class ;
+                                                  
+                                                  rdfs:label "brain organoid" ;
+                                                  
+                                                  owl:equivalentClass [ rdf:type owl:Class ;
+                                                                        owl:intersectionOf ( <http://purl.obolibrary.org/obo/ORGANOID_0000001>
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0003301> ;
+                                                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/UBERON_0000955>
+                                                                                             ]
+                                                                                           )
+                                                                      ] ;
+                                                  
+                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/ORGANOID_0000004> ;
+                                                  
+                                                  <http://purl.obolibrary.org/obo/IAO_0000115> "Any organoid that models a brain." ;
+                                                  
+                                                  <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "model of brain" .
+
+
+
+###  http://purl.obolibrary.org/obo/ORGANOID_0000006
+
+<http://purl.obolibrary.org/obo/ORGANOID_0000006> rdf:type owl:Class ;
+                                                  
+                                                  rdfs:label "retinal organoid" ;
+                                                  
+                                                  owl:equivalentClass [ rdf:type owl:Class ;
+                                                                        owl:intersectionOf ( <http://purl.obolibrary.org/obo/ORGANOID_0000001>
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0003301> ;
+                                                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/UBERON_0000966>
+                                                                                             ]
+                                                                                           )
+                                                                      ] ;
+                                                  
+                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/ORGANOID_0000004> ;
+                                                  
+                                                  <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "model of retina" ;
+                                                  
+                                                  <http://purl.obolibrary.org/obo/IAO_0000115> "Any organoid that models a retina." .
+
+
+
+###  http://purl.obolibrary.org/obo/ORGANOID_0000007
+
+<http://purl.obolibrary.org/obo/ORGANOID_0000007> rdf:type owl:Class ;
+                                                  
+                                                  rdfs:label "mammary organoid" ;
+                                                  
+                                                  owl:equivalentClass [ rdf:type owl:Class ;
+                                                                        owl:intersectionOf ( <http://purl.obolibrary.org/obo/ORGANOID_0000001>
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0003301> ;
+                                                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/UBERON_0001911>
+                                                                                             ]
+                                                                                           )
+                                                                      ] ;
+                                                  
+                                                  <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "model of mammary gland" ;
+                                                  
+                                                  <http://purl.obolibrary.org/obo/IAO_0000115> "Any organoid that models a mammary gland." .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0000204
+
+<http://purl.obolibrary.org/obo/UBERON_0000204> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0000465
+
+<http://purl.obolibrary.org/obo/UBERON_0000465> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0000468
+
+<http://purl.obolibrary.org/obo/UBERON_0000468> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0000955
+
+<http://purl.obolibrary.org/obo/UBERON_0000955> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0000966
+
+<http://purl.obolibrary.org/obo/UBERON_0000966> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0001016
+
+<http://purl.obolibrary.org/obo/UBERON_0001016> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0001264
+
+<http://purl.obolibrary.org/obo/UBERON_0001264> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0001555
+
+<http://purl.obolibrary.org/obo/UBERON_0001555> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0001782
+
+<http://purl.obolibrary.org/obo/UBERON_0001782> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0001789
+
+<http://purl.obolibrary.org/obo/UBERON_0001789> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0001911
+
+<http://purl.obolibrary.org/obo/UBERON_0001911> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0002046
+
+<http://purl.obolibrary.org/obo/UBERON_0002046> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0002048
+
+<http://purl.obolibrary.org/obo/UBERON_0002048> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0002082
+
+<http://purl.obolibrary.org/obo/UBERON_0002082> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0002107
+
+<http://purl.obolibrary.org/obo/UBERON_0002107> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0002113
+
+<http://purl.obolibrary.org/obo/UBERON_0002113> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0002196
+
+<http://purl.obolibrary.org/obo/UBERON_0002196> rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0003902
+
+<http://purl.obolibrary.org/obo/UBERON_0003902> rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/antonica2012generation
+
+<http://purl.obolibrary.org/obo/organoid/instance/antonica2012generation> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          <http://purl.org/dc/terms/title> "Generation of functional thyroid from embryonic stem cells" ;
+                                                                          
+                                                                          <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/antonica2012generation-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/antonica2012generation-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/antonica2012generation-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                         owl:NamedIndividual ;
+                                                                                
+                                                                                <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/antonica2012generation-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/antonica2012generation-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/antonica2012generation-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0002046> ,
+                                                                                               owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/assawachananont2014transplantation
+
+<http://purl.obolibrary.org/obo/organoid/instance/assawachananont2014transplantation> rdf:type owl:NamedIndividual ;
+                                                                                      
+                                                                                      <http://purl.org/dc/terms/title> "Transplantation of embryonic and induced pluripotent stem cell-derived 3D retinal sheets into retinal degenerative mice" ;
+                                                                                      
+                                                                                      <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/assawachananont2014transplantation-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/assawachananont2014transplantation-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/assawachananont2014transplantation-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                                     owl:NamedIndividual ;
+                                                                                            
+                                                                                            <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/assawachananont2014transplantation-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/assawachananont2014transplantation-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/assawachananont2014transplantation-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001789> ,
+                                                                                                           owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/danjo2011subregional
+
+<http://purl.obolibrary.org/obo/organoid/instance/danjo2011subregional> rdf:type owl:NamedIndividual ;
+                                                                        
+                                                                        <http://purl.org/dc/terms/title> "Subregional specification of embryonic stem cell-derived ventral telencephalic tissues by timed and combinatory treatment with extrinsic signals" ;
+                                                                        
+                                                                        <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/danjo2011subregional-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/danjo2011subregional-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/danjo2011subregional-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                       owl:NamedIndividual ;
+                                                                              
+                                                                              <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/danjo2011subregional-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/danjo2011subregional-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/danjo2011subregional-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0000204> ,
+                                                                                             owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/dekkers2013functional
+
+<http://purl.obolibrary.org/obo/organoid/instance/dekkers2013functional> rdf:type owl:NamedIndividual ;
+                                                                         
+                                                                         <http://purl.org/dc/terms/title> "A functional CFTR assay using primary cystic fibrosis intestinal organoids" ;
+                                                                         
+                                                                         <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/dekkers2013functional-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/dekkers2013functional-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/dekkers2013functional-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                        owl:NamedIndividual ;
+                                                                               
+                                                                               <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/dekkers2013functional-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/dekkers2013functional-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/dekkers2013functional-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001555> ,
+                                                                                              owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/eiraku2008self
+
+<http://purl.obolibrary.org/obo/organoid/instance/eiraku2008self> rdf:type owl:NamedIndividual ;
+                                                                  
+                                                                  <http://purl.org/dc/terms/title> "Self-organized formation of polarized cortical tissues from ESCs and its active manipulation by extrinsic signals" ;
+                                                                  
+                                                                  <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/eiraku2008self-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/eiraku2008self-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/eiraku2008self-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                 owl:NamedIndividual ;
+                                                                        
+                                                                        <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/eiraku2008self-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/eiraku2008self-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/eiraku2008self-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0000955> ,
+                                                                                       owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/eiraku2011self
+
+<http://purl.obolibrary.org/obo/organoid/instance/eiraku2011self> rdf:type owl:NamedIndividual ;
+                                                                  
+                                                                  <http://purl.org/dc/terms/title> "Self-organizing optic-cup morphogenesis in three-dimensional culture" ;
+                                                                  
+                                                                  <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/eiraku2011self-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/eiraku2011self-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/eiraku2011self-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                 owl:NamedIndividual ;
+                                                                        
+                                                                        <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/eiraku2011self-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/eiraku2011self-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/eiraku2011self-model-proto> rdf:type <http://purl.obolibrary.org/obo/GO_0002072> ,
+                                                                                       <http://purl.obolibrary.org/obo/UBERON_0000966> ,
+                                                                                       owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/gao2014organoid
+
+<http://purl.obolibrary.org/obo/organoid/instance/gao2014organoid> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   <http://purl.org/dc/terms/title> "Organoid cultures derived from patients with advanced prostate cancer" ;
+                                                                   
+                                                                   <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/gao2014organoid-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/gao2014organoid-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/gao2014organoid-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                  owl:NamedIndividual ;
+                                                                         
+                                                                         <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/gao2014organoid-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/gao2014organoid-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/gao2014organoid-model-proto> rdf:type <http://purl.obolibrary.org/obo/HP_0012125> ,
+                                                                                        owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/greggio2013artificial
+
+<http://purl.obolibrary.org/obo/organoid/instance/greggio2013artificial> rdf:type owl:NamedIndividual ;
+                                                                         
+                                                                         <http://purl.org/dc/terms/title> "Artificial three-dimensional niches deconstruct pancreas development in vitro" ;
+                                                                         
+                                                                         <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/greggio2013artificial-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/greggio2013artificial-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/greggio2013artificial-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                        owl:NamedIndividual ;
+                                                                               
+                                                                               <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/greggio2013artificial-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/greggio2013artificial-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/greggio2013artificial-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001264> ,
+                                                                                              owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/huch2013vitro
+
+<http://purl.obolibrary.org/obo/organoid/instance/huch2013vitro> rdf:type owl:NamedIndividual ;
+                                                                 
+                                                                 <http://purl.org/dc/terms/title> "In vitro expansion of single Lgr5+ liver stem cells induced by Wnt-driven regeneration" ;
+                                                                 
+                                                                 <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/huch2013vitro-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/huch2013vitro-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/huch2013vitro-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                owl:NamedIndividual ;
+                                                                       
+                                                                       <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/huch2013vitro-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/huch2013vitro-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/huch2013vitro-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0002107> ,
+                                                                                      owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/huch2015long
+
+<http://purl.obolibrary.org/obo/organoid/instance/huch2015long> rdf:type owl:NamedIndividual ;
+                                                                
+                                                                <http://purl.org/dc/terms/title> "Long-term culture of genome-stable bipotent stem cells from adult human liver" ;
+                                                                
+                                                                <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/huch2015long-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/huch2015long-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/huch2015long-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                               owl:NamedIndividual ;
+                                                                      
+                                                                      <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/huch2015long-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/huch2015long-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/huch2015long-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0002107> ,
+                                                                                     owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/ishii1966reconstruction
+
+<http://purl.obolibrary.org/obo/organoid/instance/ishii1966reconstruction> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           <http://purl.org/dc/terms/title> "Reconstruction of dissociated chick brain cells in rotation-mediated culture" ;
+                                                                           
+                                                                           <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/ishii1966reconstruction-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/ishii1966reconstruction-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/ishii1966reconstruction-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                          owl:NamedIndividual ;
+                                                                                 
+                                                                                 <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/ishii1966reconstruction-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/ishii1966reconstruction-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/ishii1966reconstruction-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0000955> ,
+                                                                                                owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/kadoshima2013self
+
+<http://purl.obolibrary.org/obo/organoid/instance/kadoshima2013self> rdf:type owl:NamedIndividual ;
+                                                                     
+                                                                     <http://purl.org/dc/terms/title> "Self-organization of axial polarity, inside-out layer pattern, and species-specific progenitor dynamics in human ES cell--derived neocortex" ;
+                                                                     
+                                                                     <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/kadoshima2013self-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/kadoshima2013self-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/kadoshima2013self-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                    owl:NamedIndividual ;
+                                                                           
+                                                                           <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/kadoshima2013self-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/kadoshima2013self-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/kadoshima2013self-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0000955> ,
+                                                                                          owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/lancaster2013cerebral
+
+<http://purl.obolibrary.org/obo/organoid/instance/lancaster2013cerebral> rdf:type owl:NamedIndividual ;
+                                                                         
+                                                                         <http://purl.org/dc/terms/title> "Cerebral organoids model human brain development and microcephaly" ;
+                                                                         
+                                                                         <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/lancaster2013cerebral-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/lancaster2013cerebral-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/lancaster2013cerebral-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                        owl:NamedIndividual ;
+                                                                               
+                                                                               <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/lancaster2013cerebral-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/lancaster2013cerebral-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/lancaster2013cerebral-model-proto> rdf:type <http://purl.obolibrary.org/obo/HP_0000252> ,
+                                                                                              <http://purl.obolibrary.org/obo/UBERON_0000955> ,
+                                                                                              owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/lee2008engineered
+
+<http://purl.obolibrary.org/obo/organoid/instance/lee2008engineered> rdf:type owl:NamedIndividual ;
+                                                                     
+                                                                     <http://purl.org/dc/terms/title> "Engineered cardiac organoid chambers: toward a functional biological model ventricle" ;
+                                                                     
+                                                                     <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/lee2008engineered-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/lee2008engineered-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/lee2008engineered-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                    owl:NamedIndividual ;
+                                                                           
+                                                                           <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/lee2008engineered-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/lee2008engineered-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/lee2008engineered-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0002082> ,
+                                                                                          owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/lee2014lung
+
+<http://purl.obolibrary.org/obo/organoid/instance/lee2014lung> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               <http://purl.org/dc/terms/title> "Lung stem cell differentiation in mice directed by endothelial cells via a BMP4-NFATc1-thrombospondin-1 axis" ;
+                                                               
+                                                               <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/lee2014lung-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/lee2014lung-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/lee2014lung-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                              <http://purl.obolibrary.org/obo/UBERON_0002048> ,
+                                                                              owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/mccracken2014modelling
+
+<http://purl.obolibrary.org/obo/organoid/instance/mccracken2014modelling> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          <http://purl.org/dc/terms/title> "Modelling human development and disease in pluripotent stem-cell-derived gastric organoids" ;
+                                                                          
+                                                                          <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/mccracken2014modelling-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/mccracken2014modelling-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/mccracken2014modelling-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                         owl:NamedIndividual ;
+                                                                                
+                                                                                <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/mccracken2014modelling-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/mccracken2014modelling-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/mccracken2014modelling-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001555> ,
+                                                                                               owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/mondrinos2014engineering
+
+<http://purl.obolibrary.org/obo/organoid/instance/mondrinos2014engineering> rdf:type owl:NamedIndividual ;
+                                                                            
+                                                                            <http://purl.org/dc/terms/title> "Engineering de novo assembly of fetal pulmonary organoids" ;
+                                                                            
+                                                                            <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/mondrinos2014engineering-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/mondrinos2014engineering-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/mondrinos2014engineering-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                           owl:NamedIndividual ;
+                                                                                  
+                                                                                  <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/mondrinos2014engineering-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/mondrinos2014engineering-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/mondrinos2014engineering-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0002048> ,
+                                                                                                 owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/mroue2013three
+
+<http://purl.obolibrary.org/obo/organoid/instance/mroue2013three> rdf:type owl:NamedIndividual ;
+                                                                  
+                                                                  <http://purl.org/dc/terms/title> "Three-dimensional cultures of mouse mammary epithelial cells" ;
+                                                                  
+                                                                  <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/mroue2013three-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/mroue2013three-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/mroue2013three-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                 owl:NamedIndividual ;
+                                                                        
+                                                                        <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/mroue2013three-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/mroue2013three-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/mroue2013three-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001911> ,
+                                                                                       owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/nakano2012self
+
+<http://purl.obolibrary.org/obo/organoid/instance/nakano2012self> rdf:type owl:NamedIndividual ;
+                                                                  
+                                                                  <http://purl.org/dc/terms/title> "Self-formation of optic cups and storable stratified neural retina from human ESCs" ;
+                                                                  
+                                                                  <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/nakano2012self-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/nakano2012self-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/nakano2012self-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                 owl:NamedIndividual ;
+                                                                        
+                                                                        <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/nakano2012self-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/nakano2012self-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/nakano2012self-model-proto> rdf:type <http://purl.obolibrary.org/obo/GO_0002072> ,
+                                                                                       <http://purl.obolibrary.org/obo/UBERON_0003902> ,
+                                                                                       owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/rothermel1997pigmented
+
+<http://purl.obolibrary.org/obo/organoid/instance/rothermel1997pigmented> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          <http://purl.org/dc/terms/title> "Pigmented epithelium induces complete retinal reconstitution from dispersed embryonic chick retinae in reaggregation culture" ;
+                                                                          
+                                                                          <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/rothermel1997pigmented-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/rothermel1997pigmented-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/rothermel1997pigmented-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                         owl:NamedIndividual ;
+                                                                                
+                                                                                <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/rothermel1997pigmented-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/rothermel1997pigmented-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/rothermel1997pigmented-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0000966> ,
+                                                                                               owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/sato2009paneth-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/sato2009paneth-model> rdf:type owl:NamedIndividual ;
+                                                                        
+                                                                        <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/sato2011paneth-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/sato2009single
+
+<http://purl.obolibrary.org/obo/organoid/instance/sato2009single> rdf:type owl:NamedIndividual ;
+                                                                  
+                                                                  <http://purl.org/dc/terms/title> "Single Lgr5 stem cells build crypt villus structures in vitro without a mesenchymal niche" ;
+                                                                  
+                                                                  <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/sato2009single-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/sato2009single-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/sato2009single-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                 owl:NamedIndividual ;
+                                                                        
+                                                                        <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/sato2009single-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/sato2009single-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/sato2009single-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001555> ,
+                                                                                       owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/sato2011long
+
+<http://purl.obolibrary.org/obo/organoid/instance/sato2011long> rdf:type owl:NamedIndividual ;
+                                                                
+                                                                <http://purl.org/dc/terms/title> "Long-term expansion of epithelial organoids from human colon, adenoma, adenocarcinoma, and Barrett's epithelium" ;
+                                                                
+                                                                <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/sato2011long-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/sato2011long-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/sato2011long-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                               owl:NamedIndividual ;
+                                                                      
+                                                                      <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/sato2011long-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/sato2011long-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/sato2011long-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001555> ,
+                                                                                     owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/sato2011paneth
+
+<http://purl.obolibrary.org/obo/organoid/instance/sato2011paneth> rdf:type owl:NamedIndividual ;
+                                                                  
+                                                                  <http://purl.org/dc/terms/title> "Paneth cells constitute the niche for Lgr5 stem cells in intestinal crypts" ;
+                                                                  
+                                                                  <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/sato2011paneth-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/sato2011paneth-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/sato2011paneth-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                 owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/sato2011paneth-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/sato2011paneth-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001555> ,
+                                                                                       owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/spence2011directed
+
+<http://purl.obolibrary.org/obo/organoid/instance/spence2011directed> rdf:type owl:NamedIndividual ;
+                                                                      
+                                                                      <http://purl.org/dc/terms/title> "Directed differentiation of human pluripotent stem cells into intestinal tissue in vitro" ;
+                                                                      
+                                                                      <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/spence2011directed-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/spence2011directed-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/spence2011directed-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                     owl:NamedIndividual ;
+                                                                            
+                                                                            <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/spence2011directed-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/spence2011directed-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/spence2011directed-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001555> ,
+                                                                                           owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/stefanelli1961retinal
+
+<http://purl.obolibrary.org/obo/organoid/instance/stefanelli1961retinal> rdf:type owl:NamedIndividual ;
+                                                                         
+                                                                         <http://purl.org/dc/terms/title> "Retinal reconstitution in vitro after disaggregation of embryonic chicken eyes (Translated from Italian)" ;
+                                                                         
+                                                                         <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/stefanelli1961retinal-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/stefanelli1961retinal-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/stefanelli1961retinal-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                        owl:NamedIndividual ;
+                                                                               
+                                                                               <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/stefanelli1961retinal-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/stefanelli1961retinal-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/stefanelli1961retinal-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0000966> ,
+                                                                                              owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/suga2011self
+
+<http://purl.obolibrary.org/obo/organoid/instance/suga2011self> rdf:type owl:NamedIndividual ;
+                                                                
+                                                                <http://purl.org/dc/terms/title> "Self-formation of functional adenohypophysis in three-dimensional culture" ;
+                                                                
+                                                                <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/suga2011self-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/suga2011self-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/suga2011self-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                               owl:NamedIndividual ;
+                                                                      
+                                                                      <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/suga2011self-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/suga2011self-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/suga2011self-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0002196> ,
+                                                                                     owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/takasato2014directing
+
+<http://purl.obolibrary.org/obo/organoid/instance/takasato2014directing> rdf:type owl:NamedIndividual ;
+                                                                         
+                                                                         <http://purl.org/dc/terms/title> "Directing human embryonic stem cell differentiation towards a renal lineage generates a self-organizing kidney" ;
+                                                                         
+                                                                         <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/takasato2014directing-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/takasato2014directing-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/takasato2014directing-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                        owl:NamedIndividual ;
+                                                                               
+                                                                               <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/takasato2014directing-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/takasato2014directing-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/takasato2014directing-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0002113> ,
+                                                                                              owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/takebe2013vascularized
+
+<http://purl.obolibrary.org/obo/organoid/instance/takebe2013vascularized> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          <http://purl.org/dc/terms/title> "Vascularized and functional human liver from an iPSC-derived organ bud transplant" ;
+                                                                          
+                                                                          <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/takebe2013vascularized-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/takebe2013vascularized-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/takebe2013vascularized-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                         owl:NamedIndividual ;
+                                                                                
+                                                                                <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/takebe2013vascularized-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/takebe2013vascularized-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/takebe2013vascularized-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0002107> ,
+                                                                                               owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/unbekandt2010dissociation
+
+<http://purl.obolibrary.org/obo/organoid/instance/unbekandt2010dissociation> rdf:type owl:NamedIndividual ;
+                                                                             
+                                                                             <http://purl.org/dc/terms/title> "Dissociation of embryonic kidneys followed by reaggregation allows the formation of renal tissues" ;
+                                                                             
+                                                                             <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/unbekandt2010dissociation-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/unbekandt2010dissociation-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/unbekandt2010dissociation-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                            owl:NamedIndividual ;
+                                                                                   
+                                                                                   <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/unbekandt2010dissociation-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/unbekandt2010dissociation-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/unbekandt2010dissociation-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0002113> ,
+                                                                                                  owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/wang2006mutant
+
+<http://purl.obolibrary.org/obo/organoid/instance/wang2006mutant> rdf:type owl:NamedIndividual ;
+                                                                  
+                                                                  <http://purl.org/dc/terms/title> "Mutant neurogenin-3 in congenital malabsorptive diarrhea" ;
+                                                                  
+                                                                  <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/wang2006mutant-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/wang2006mutant-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/wang2006mutant-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                 owl:NamedIndividual ;
+                                                                        
+                                                                        <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/wang2006mutant-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/wang2006mutant-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/wang2006mutant-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001555> ,
+                                                                                       owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/watson2014vivo
+
+<http://purl.obolibrary.org/obo/organoid/instance/watson2014vivo> rdf:type owl:NamedIndividual ;
+                                                                  
+                                                                  <http://purl.org/dc/terms/title> "An in vivo model of human small intestine using pluripotent stem cells" ;
+                                                                  
+                                                                  <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/watson2014vivo-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/watson2014vivo-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/watson2014vivo-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                 owl:NamedIndividual ;
+                                                                        
+                                                                        <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/watson2014vivo-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/watson2014vivo-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/watson2014vivo-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001555> ,
+                                                                                       owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/weiss1960reconstitution
+
+<http://purl.obolibrary.org/obo/organoid/instance/weiss1960reconstitution> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           <http://purl.org/dc/terms/title> "Reconstitution of complete organs from single-cell suspensions of chick embryos in advanced stages of differentiation" ;
+                                                                           
+                                                                           <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/weiss1960reconstitution-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/weiss1960reconstitution-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/weiss1960reconstitution-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                          owl:NamedIndividual ;
+                                                                                 
+                                                                                 <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/weiss1960reconstitution-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/weiss1960reconstitution-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/weiss1960reconstitution-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0002107> ,
+                                                                                                owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/xia2013directed
+
+<http://purl.obolibrary.org/obo/organoid/instance/xia2013directed> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   <http://purl.org/dc/terms/title> "Directed differentiation of human pluripotent cells to ureteric bud kidney progenitor-like cells" ;
+                                                                   
+                                                                   <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/xia2013directed-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/xia2013directed-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/xia2013directed-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                  owl:NamedIndividual ;
+                                                                         
+                                                                         <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/xia2013directed-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/xia2013directed-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/xia2013directed-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0002113> ,
+                                                                                        owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/xinaris2012vivo
+
+<http://purl.obolibrary.org/obo/organoid/instance/xinaris2012vivo> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   <http://purl.org/dc/terms/title> "In vivo maturation of functional renal organoids formed from embryonic cell suspensions" ;
+                                                                   
+                                                                   <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/xinaris2012vivo-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/xinaris2012vivo-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/xinaris2012vivo-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                  owl:NamedIndividual ;
+                                                                         
+                                                                         <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/xinaris2012vivo-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/xinaris2012vivo-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/xinaris2012vivo-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0002113> ,
+                                                                                        owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/yui2012functional
+
+<http://purl.obolibrary.org/obo/organoid/instance/yui2012functional> rdf:type owl:NamedIndividual ;
+                                                                     
+                                                                     <http://purl.org/dc/terms/title> "Functional engraftment of colon epithelium expanded in vitro from a single adult Lgr5+ stem cell" ;
+                                                                     
+                                                                     <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/yui2012functional-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/yui2012functional-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/yui2012functional-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                                    owl:NamedIndividual ;
+                                                                           
+                                                                           <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/yui2012functional-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/yui2012functional-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/yui2012functional-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001555> ,
+                                                                                          owl:NamedIndividual .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/zhu2013three
+
+<http://purl.obolibrary.org/obo/organoid/instance/zhu2013three> rdf:type owl:NamedIndividual ;
+                                                                
+                                                                <http://purl.org/dc/terms/title> "Three-dimensional neuroepithelial culture from human embryonic stem cells and its use for quantitative conversion to retinal pigment epithelium" ;
+                                                                
+                                                                <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/organoid/instance/zhu2013three-model> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/zhu2013three-model
+
+<http://purl.obolibrary.org/obo/organoid/instance/zhu2013three-model> rdf:type <http://purl.obolibrary.org/obo/ORGANOID_0000001> ,
+                                                                               owl:NamedIndividual ;
+                                                                      
+                                                                      <http://purl.obolibrary.org/obo/RO_0003301> <http://purl.obolibrary.org/obo/organoid/instance/zhu2013three-model-proto> .
+
+
+
+###  http://purl.obolibrary.org/obo/organoid/instance/zhu2013three-model-proto
+
+<http://purl.obolibrary.org/obo/organoid/instance/zhu2013three-model-proto> rdf:type <http://purl.obolibrary.org/obo/UBERON_0001782> ,
+                                                                                     <http://purl.obolibrary.org/obo/UBERON_0003902> ,
+                                                                                     owl:NamedIndividual .
+
+
+
+
+###  Generated by the OWL API (version 0.2.2-SNAPSHOT) http://owlapi.sourceforge.net
+
