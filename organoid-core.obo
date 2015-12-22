@@ -4,9 +4,17 @@ import: http://purl.obolibrary.org/obo/organoid/imports/uberon_import.owl
 [Term]
 id: ORGANOID:0000001
 name: organoid
+is_a: UBERON:0000465 ! material anatomical entity
 relationship: is_model_of UBERON:0000468 ! multicellular organism
 
 [Typedef]
 id: is_model_of
+name: is model of
+holds_over_chain: is_model_of part_of
 xref: RO:0003301
+
+[Typedef]
+id: part_of
+name: part of
+xref: BFO:0000050
 
