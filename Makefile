@@ -10,4 +10,4 @@ imports/%_import.owl: mireot.txt
 	robot extract -i mirror/$@.owl --method MIREOT --term-file mireot.txt -o $@
 
 foo.owl:
-	robot -i mirror/uberon.owl 
+	robot template -i mirror/uberon.owl 
