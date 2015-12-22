@@ -1,0 +1,12 @@
+ontology: organoid
+import: http://purl.obolibrary.org/obo/organoid/imports/uberon_import.owl
+
+[Term]
+id: ORGANOID:0000001
+name: organoid
+relationship: is_model_of UBERON:0000468 ! multicellular organism
+
+[Typedef]
+id: is_model_of
+xref: RO:0003301
+
